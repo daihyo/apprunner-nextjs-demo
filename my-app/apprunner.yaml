@@ -4,6 +4,7 @@ build:
   commands:
     pre-build:
       - echo "test1"
+      - npm ci
       - npm run build
     build:
       - echo "test2"
