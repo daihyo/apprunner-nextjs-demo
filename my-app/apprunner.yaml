@@ -2,7 +2,12 @@ version: 1.0
 runtime: nodejs18
 build:
   commands:
+    pre-build:
+      - echo "test1"
+      - npm run build
     build:
       - echo "test2"
 run:
   command: npm run start
+  network: 
+    port: 3000
