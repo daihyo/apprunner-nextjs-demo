@@ -5,7 +5,5 @@ build:
     pre-build:
       - echo "test1"
       - npm run build
-    build:
-      - echo "test2"
 run:
   command: npm run start
